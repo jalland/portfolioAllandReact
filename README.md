@@ -9,7 +9,7 @@ https://github.com/jalland/portfolioAllandReact
 
 
 ## Screenshot of application
-
+![Screen Shot 2024-03-03 at 4 09 10 PM](https://github.com/jalland/portfolioAllandReact/assets/15932648/3a4c9ce7-c25f-4669-b36c-8507695ff351)
 
 
 ## User Story
