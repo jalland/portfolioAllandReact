@@ -1,9 +1,11 @@
+import image from './assets/Alland_ProfessionalPicture.jpeg';
+
 // This is the home page of the web application. It is the first page that the user sees when they visit the site. It contains a brief introduction to the developer and a picture of the developer.
 export default function AboutPage() {
   return (
     <div className="container pt-4">
       <h2>About Me</h2>
-      <img src="../../src/assets/Alland_ProfessionalPicture.jpeg" alt="Josh Alland Picture" style={{ width: '200px' }}/>
+      <img src={image} alt="Josh Alland Picture" style={{ width: '200px' }}/>
       <p>
       <br></br>
       My name is Josh Alland. I am a scientist and full-stack web developer. <br></br><br></br>

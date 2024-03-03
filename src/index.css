@@ -96,6 +96,10 @@ background-image: url('./assets/Roomeo.png');
   background-image: url('./assets/BootcampQuiz.png');
 } 
 
+.professional-image{
+  background-image: url('./assets/Alland_ProfessionalPicture.jpeg');
+} 
+
 .Logos{
   opacity: 0.5;
 }
