@@ -1,6 +1,6 @@
 # portfolioAllandReact
 ## Description
-This application creates a Progressive Web Application that is a text editor. The application runs in the browser or offline (via local installation). Information that the user enters into the text editor is saved in a noSQL database (indexedDB).
+This web application is a React-built portfolio that includes a description about me, my web-development projects with links to the deployed applications and Github codes, a way to contact me using a dynamic form, and my resume. 
 
 ## Github code
 https://github.com/jalland/portfolioAllandReact 
