@@ -1,4 +1,4 @@
-import image from './assets/Alland_ProfessionalPicture.jpeg';
+import image from '../assets/Alland_ProfessionalPicture.jpeg';
 
 // This is the home page of the web application. It is the first page that the user sees when they visit the site. It contains a brief introduction to the developer and a picture of the developer.
 export default function AboutPage() {
