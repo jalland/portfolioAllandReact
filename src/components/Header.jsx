@@ -3,15 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+//Function that deteremines if you are on the active page. If so, the text will change to black.
 function NavigationBar() {
-  // Get the current location
   const location = useLocation();
-
-  // Determine if the location matches the path
+  // Determine if the location matches the path. If so, the text will change to black. 
   const isActive = (path) => {
     return location.pathname === path;
   };
 
+  //This is the header that contains the navigation bar to the various "pages" of the website. Note this is using React Bootstrap.
   return (
     <Navbar style={{padding:"0px"}} expand="lg" className="bg-body-tertiary">
       <Container fluid style={{ backgroundColor: "gray", padding: "0px", height: "150px" }}>

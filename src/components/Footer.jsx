@@ -2,6 +2,7 @@
 import React from 'react';
 import { AiFillGithub,AiFillLinkedin,AiFillTwitterCircle } from "react-icons/ai";
 
+//This is the footer that has icons for my github, linkedin, and twitter accounts.
 export default function Footer() {
   return (
     <footer className="footer mt-auto py-3 bg-white">

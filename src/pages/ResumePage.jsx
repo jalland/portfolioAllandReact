@@ -1,3 +1,4 @@
+//This is the resume page. It is a functional component that returns a div with a header, a paragraph, and two lists.
 export default function ResumePage() {
   return (
     <div className="container pt-4">

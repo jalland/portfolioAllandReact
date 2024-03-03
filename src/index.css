@@ -60,75 +60,6 @@ button:focus-visible {
   padding: 1em;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-
-
-
-
-
-
-
-
-
-/*Styles for the About Me section  */
-.container-aboutme {
-  display:flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  flex: 0 0 100%;
-  padding-top:20px;
-}
-
-.container-aboutme-work-image-full-length {
-  display:flex;
-  position:relative;
-  justify-content: space-around;
-  width: 450px; 
-  height: 200px; 
-  border: 4px solid black;
-  margin:5px;
-}
-
-.container-aboutme-work-image img {
-  width: 100%; 
-  max-width: 100%;
-  opacity: 0.5; 
-}
-
-.container-aboutme-work-image img:hover {
-  opacity: 1.0; 
-}
-
-.caption-aboutme-work-image {
-  position: absolute;
-  bottom: 2%;
-  left: 2%;
-  background-color:var(--dark); 
-  color: black; 
-  max-width: 70%;
-  padding: 5px; 
-  text-align: center;
-  background-color: white; /* Change the background color to white */
-
-}
-
-.caption-aboutme-work-image a {
-  text-decoration: "underline"; 
-}
-
 .card{
   width: 450px; 
   height: 225px; 
@@ -137,6 +68,7 @@ button:focus-visible {
   background-size: 100%;
   opacity: 0.5;
 }
+
 
 .card:hover {
   opacity: 1.0; 
@@ -163,7 +95,6 @@ background-image: url('./assets/Roomeo.png');
 .coding-quiz{
   background-image: url('./assets/BootcampQuiz.png');
 } 
-
 
 .Logos{
   opacity: 0.5;

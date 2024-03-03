@@ -1,6 +1,6 @@
-import Card from "../components/Card"
+import Project from "../components/Project"
 
-
+//This is the PortfolioPage component that will be used to display the projects on the portfolio page. It calls a Project component for each project in the array of objects.
 export default function PortfolioPage(){
 
     const array = [
@@ -47,7 +47,7 @@ return(
 <h2>Portfolio</h2>
 <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
 {array.map((item)=> (
-  <Card item={item} />
+  <Project item={item} />
 ))}
 </div>
 </div>

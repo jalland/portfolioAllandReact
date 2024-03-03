@@ -1,6 +1,7 @@
 import { AiFillGithub } from "react-icons/ai";
 
-export default function Card({ item }) {
+//This is the Project component that will be used to display the projects on the portfolio page.
+export default function Project({ item }) {
     return (
         <a style={{ position: "relative", margin: "20px", display: "block", textDecoration: "none", color: "inherit" }} className={`${item.class} card`} href={item.deployedLink} target='_blank'>
             <h3 style={{ 

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
+// Defines the Form component. This component will be used in the ContactPage components
 function Form() {
-  // Here we set two state variables for Name and email using `useState`
+  //There are various state variables that are used to store the values of the input fields. If the input field is non-existent or invalid, red text will appear above the submit button. 
   const [Name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -20,7 +21,7 @@ function Form() {
     }
   };
  
-  
+  //Determines if email is valid. 
   const handleWarningEmail = (e) => {
     const { value } = e.target;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -32,6 +33,7 @@ function Form() {
     }
   };
 
+  //Determines if there is a message present. 
   const handleWarningMessage = (e) => {
     const { value } = e.target;
     console.log(value)
@@ -42,11 +44,9 @@ function Form() {
     }
   };
 
+//Changes the state of state variables as a user types in the input fields.
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
-  
-    // Update the state based on the input field name
     if (name === 'Name') {
       setName(value);
     } else if (name === 'email') {
@@ -57,13 +57,11 @@ function Form() {
   };
 
   const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
-
-    // Alert the user their first and last name, clear the inputs
     alert(`Message submitted!`);
   };
 
+  //Returns the form to be used in the ContactPage component.
   return (
     <div className="container text-center">
       <form className="form" onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -90,7 +88,7 @@ function Form() {
             type="text"
             id="email"
             placeholder="Enter your email"
-            style={{ width: '100%' }} // Adjusted width
+            style={{ width: '100%' }}
           />
         </div>
         <div className="form-group" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', maxWidth: '500px' }}>
@@ -103,7 +101,7 @@ function Form() {
             type="text"
             id="message"
             placeholder="Enter your message"
-            style={{ width: '100%', height: '100px' }} // Adjusted width
+            style={{ width: '100%', height: '100px' }} 
           />
         </div>
         <h5 style={{ color: 'red' }}>
@@ -128,7 +126,7 @@ export default function ContactPage() {
   return (
     <div className="container pt-4">
       <h2>Contact</h2>
-      <Form /> {/* Render the Form component */}
+      <Form />
     </div>
   );
 }

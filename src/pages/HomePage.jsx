@@ -1,4 +1,4 @@
-// This is a static page mocking an "About Us" section for our fake user data
+// This is the home page of the web application. It is the first page that the user sees when they visit the site. It contains a brief introduction to the developer and a picture of the developer.
 export default function AboutPage() {
   return (
     <div className="container pt-4">
