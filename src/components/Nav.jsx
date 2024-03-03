@@ -19,7 +19,7 @@ function NavigationBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse style={{ backgroundColor: "gray" }} id="basic-navbar-nav">
           <Nav className="ms-auto" style={{ fontSize: 28, justifyContent: "flex-end" }}>
-            <Nav.Link style={{ color: isActive('/about') ? 'black' : 'white' }} href="/">About</Nav.Link>
+            <Nav.Link style={{ color: isActive('/') ? 'black' : 'white' }} href="/">About</Nav.Link>
             <Nav.Link style={{ color: isActive('/portfolio') ? 'black' : 'white' }} href="/portfolio">Portfolio</Nav.Link>
             <Nav.Link style={{ color: isActive('/contact') ? 'black' : 'white' }} href="/contact">Contact</Nav.Link>
             <Nav.Link style={{ color: isActive('/resume') ? 'black' : 'white' }} href="/resume">Resume</Nav.Link>

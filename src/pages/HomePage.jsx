@@ -10,7 +10,7 @@ export default function AboutPage() {
         
         On the science side, I am an Associate Scientist with NOAA's National Hurricane Center (NHC). At NHC, I work with the scientific community to develop, test, and deploy new products and services. In this role, I collaborate with physical scientistis, social scientists, and our partners, including emergency managers, broadcast meteorologists, and other Federal government agencies. <br></br><br></br> 
         
-        On the web development side, I am a graduate of the University of Miami's Coding Bootcamp. I have experience with HTML, CSS, JavaScript, jQuery, Node.js, Express, MySQL, MongoDB, React, and other web development technologies. Please see the Portfolio tab for examples of my work, and please contact me via the Contact tab. You can find my resume on the Resume tab. <br></br>
+        On the web development side, I am a graduate of the University of Miami's Coding Bootcamp. I have experience with HTML, CSS, JavaScript, jQuery, Node.js, Express, MySQL, MongoDB, React, and other web development technologies. Please see the Portfolio tab for examples of my work, and please contact me via the Contact tab. You can find my resume on the Resume tab <br></br>
       </p>
 
       
