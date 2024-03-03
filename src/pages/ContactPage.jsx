@@ -6,11 +6,21 @@ function Form() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const [warningName, setwarningName] = useState('A name is required');
   const [warningEmail, setwarningEmail] = useState('A valid email is required');
   const [warningMessage, setwarningMessage] = useState('A message is required');
 
-
+  const handleWarningName = (e) => {
+    const { value } = e.target;
+    console.log(value)
+    if (value=="") {
+      setwarningName("A name is required")
+    } else {
+      setwarningName("")
+    }
+  };
  
+  
   const handleWarningEmail = (e) => {
     const { value } = e.target;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -63,6 +73,7 @@ function Form() {
             value={Name}
             name="Name"
             onChange={handleInputChange}
+            onBlur={handleWarningName}
             type="text"
             id="Name"
             placeholder="Enter your name"
@@ -96,6 +107,9 @@ function Form() {
           />
         </div>
         <h5 style={{ color: 'red' }}>
+          {warningName}
+        </h5>
+        <h5 style={{ color: 'red' }}>
           {warningEmail}
         </h5>
         <h5 style={{ color: 'red' }}>
@@ -113,7 +127,7 @@ function Form() {
 export default function ContactPage() {
   return (
     <div className="container pt-4">
-      <h2>Contact Me</h2>
+      <h2>Contact</h2>
       <Form /> {/* Render the Form component */}
     </div>
   );

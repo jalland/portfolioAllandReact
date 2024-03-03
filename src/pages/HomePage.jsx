@@ -5,7 +5,12 @@ export default function AboutPage() {
       <h2>About Me</h2>
       <img src="../../src/assets/Alland_ProfessionalPicture.jpeg" alt="Josh Alland Picture" style={{ width: '200px' }}/>
       <p>
-        My name is Josh Alland. I am a scientist and full-stack web developer. On the science side, I am an Associate Scientist at NOAA's National Hurricane Center (NHC). At NHC, I work on the Hurricane Specialist Unit (HSU) team, where I help forecasters analyze and interpret data from satellites, aircraft, and other sources to improve the accuracy of hurricane forecasts. I also help maintain and improve the HSU's internal and external web-based tools and databases. On the web development side, I am a graduate of the University of Miami's Coding Bootcamp. I have experience with HTML, CSS, JavaScript, jQuery, Node.js, Express, MySQL, MongoDB, React, and other web development technologies. 
+      <br></br>
+      My name is Josh Alland. I am a scientist and full-stack web developer. <br></br><br></br>
+        
+        On the science side, I am an Associate Scientist with NOAA's National Hurricane Center (NHC). At NHC, I work with the scientific community to develop, test, and deploy new products and services. In this role, I collaborate with physical scientistis, social scientists, and our partners, including emergency managers, broadcast meteorologists, and other Federal government agencies. <br></br><br></br> 
+        
+        On the web development side, I am a graduate of the University of Miami's Coding Bootcamp. I have experience with HTML, CSS, JavaScript, jQuery, Node.js, Express, MySQL, MongoDB, React, and other web development technologies. Please see the Portfolio tab for examples of my work, and please contact me via the Contact tab. You can find my resume on the Resume tab. <br></br>
       </p>
 
       

@@ -1,33 +1,33 @@
 import { Link, useLocation } from 'react-router-dom';
-import Navbar from './UI/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-export default function Nav() {
+function NavigationBar() {
   // Get the current location
   const location = useLocation();
-  console.log(location)
 
   // Determine if the location matches the path
   const isActive = (path) => {
     return location.pathname === path;
   };
 
-  // The Navbar UI component will render each of the Link elements in the links prop
   return (
-    <Navbar
-      links={[
-        <Link key={1} className={`nav-link ${isActive('/') ? 'text-black' : 'text-light'}`} to="/">
-          About Me
-        </Link>,
-        <Link key={2} className={`nav-link ${isActive('/portfolio') ? 'text-black' : 'text-light'}`} to="/portfolio">
-          Portfolio
-        </Link>,
-        <Link key={3} className={`nav-link ${isActive('/contact') ? 'text-black' : 'text-light'}`} to="/contact">
-          Contact Me
-        </Link>,
-        <Link key={4} className={`nav-link ${isActive('/resume') ? 'text-black' : 'text-light'}`} to="/resume">
-          Resume
-        </Link>,
-      ]}
-    />
+    <Navbar style={{padding:"0px"}} expand="lg" className="bg-body-tertiary">
+      <Container fluid style={{ backgroundColor: "gray", padding: "0px", height: "150px" }}>
+        <Navbar.Brand href="/" style={{ fontSize: 48, color: "white", margin: "10px"}}>Josh Alland</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse style={{ backgroundColor: "gray" }} id="basic-navbar-nav">
+          <Nav className="ms-auto" style={{ fontSize: 28, justifyContent: "flex-end" }}>
+            <Nav.Link style={{ color: isActive('/about') ? 'black' : 'white' }} href="/">About</Nav.Link>
+            <Nav.Link style={{ color: isActive('/portfolio') ? 'black' : 'white' }} href="/portfolio">Portfolio</Nav.Link>
+            <Nav.Link style={{ color: isActive('/contact') ? 'black' : 'white' }} href="/contact">Contact</Nav.Link>
+            <Nav.Link style={{ color: isActive('/resume') ? 'black' : 'white' }} href="/resume">Resume</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
+
+export default NavigationBar;

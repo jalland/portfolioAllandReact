@@ -60,7 +60,7 @@ button:focus-visible {
   padding: 1em;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -71,7 +71,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 
 
@@ -128,5 +128,50 @@ button:focus-visible {
 .caption-aboutme-work-image a {
   text-decoration: "underline"; 
 }
+
+.card{
+  width: 450px; 
+  height: 225px; 
+  border: 4px solid black;
+  margin:5px;
+  background-size: 100%;
+  opacity: 0.5;
+}
+
+.card:hover {
+  opacity: 1.0; 
+}
+
+.roomeo{
+background-image: url('./assets/Roomeo.png');
+} 
+
+.recipe-app{
+  background-image: url('./assets/RecipeApp.png');
+  } 
+
+.note-taker{
+  background-image: url('./assets/NoteTaker.png');
+  } 
+
+.temp-dashboard{
+  background-image: url('./assets/TemperatureDashboard.png');
+  } 
+.daily-planner{
+  background-image: url('./assets/DailyPlanner.png');
+} 
+.coding-quiz{
+  background-image: url('./assets/BootcampQuiz.png');
+} 
+
+
+.Logos{
+  opacity: 0.5;
+}
+
+.Logos:hover {
+  opacity: 1.0; 
+}
+
 
 
