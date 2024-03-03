@@ -1,12 +1,24 @@
 # portfolioAllandReact
+## Description
+This application creates a Progressive Web Application that is a text editor. The application runs in the browser or offline (via local installation). Information that the user enters into the text editor is saved in a noSQL database (indexedDB).
+
+## Github code
+https://github.com/jalland/portfolioAllandReact 
+
+## Deployed application 
 
 
+## Screenshot of application
+
+
+
+## User Story
 
 ```AS AN employer looking for candidates with experience building single-page applications
 I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position```
 
-
+## Acceptance Criteria
 ```GIVEN a single-page application portfolio for a web developer
 WHEN I load the portfolio
 THEN I am presented with a page containing a header, a section for content, and a footer
